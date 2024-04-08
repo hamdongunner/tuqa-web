@@ -1,0 +1,235 @@
+.home {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.home .type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .home .type {
+    text-align: center;
+  }
+}
+
+.home .type .hello {
+  font-weight: bold;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+}
+
+.home .type .hello span {
+  color: #f05d7b;
+  position: relative;
+}
+
+.home .type h1 {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+  color: #011944;
+}
+
+@media screen and (max-width: 660px) {
+  .home .type h1 {
+    font-size: 28px;
+  }
+}
+
+.home .type .little-poop {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+  color: #6d6d6d;
+}
+
+@media screen and (max-width: 660px) {
+  .home .type .little-poop {
+    font-size: 14px;
+  }
+}
+
+.home .illustrator {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transform: translateY(100px) scale(0.5);
+          transform: translateY(100px) scale(0.5);
+}
+
+.home .illustrator .flip-container {
+  width: 350px;
+  height: 320px;
+}
+
+@media screen and (max-width: 1000px) {
+  .home .illustrator .flip-container {
+    width: 300px;
+  }
+}
+
+.home .illustrator .flip-container .card__content {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.home .illustrator .flip-container .card__content .card__front,
+.home .illustrator .flip-container .card__content .card__back {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.home .illustrator .flip-container .card__content .card__front img,
+.home .illustrator .flip-container .card__content .card__back img {
+  width: 100%;
+}
+
+.home .illustrator .flip-container .card__content .card__back {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+  background-color: #f2f4f9;
+}
+
+.home .illustrator .flip-container .card__content.rotate {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+}
+
+.home .illustrator .cta {
+  background-color: #fff;
+  height: 70px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.home .illustrator .cta a {
+  text-decoration: none;
+  padding: 11px 38px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.home .illustrator .cta a:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 2px 10px #f05d7a9c;
+          box-shadow: 0 2px 10px #f05d7a9c;
+}
+
+.home .illustrator .cta a:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.home .illustrator .cta .hire-me {
+  color: #fff;
+  background-color: #f05d7b;
+  border: 2px solid #f05d7b;
+}
+
+.home .illustrator .cta .download-cv {
+  color: #f05d7b;
+  border: 2px solid #f05d7b;
+}
+
+.home .illustrator .marjuha-btn {
+  border: none;
+  display: none;
+  outline: none;
+  background-color: transparent;
+  padding: 20px;
+  color: #f05d7b;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: font-size 0.3s;
+  transition: font-size 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  .home .illustrator .marjuha-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.home .illustrator .marjuha-btn:hover {
+  font-size: 14px;
+}
+/*# sourceMappingURL=flipCard.css.map */

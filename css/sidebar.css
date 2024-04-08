@@ -1,0 +1,61 @@
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.side-menu {
+  z-index: 22;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: #f2f4f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.side-menu .nav-links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.side-menu .nav-links .nav-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.side-menu.active {
+  -webkit-box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=sidebar.css.map */

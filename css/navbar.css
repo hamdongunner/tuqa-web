@@ -1,0 +1,67 @@
+.navbar {
+  width: 100%;
+  background-color: #f2f4f9;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s, -webkit-box-shadow;
+  transition: 0.2s, -webkit-box-shadow;
+  transition: box-shadow, 0.2s;
+  transition: box-shadow, 0.2s, -webkit-box-shadow;
+}
+
+.navbar .container {
+  width: 1000px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar .container {
+    padding: 0 10px 0 10px;
+  }
+}
+
+.navbar .container .nav-links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .container .nav-links {
+    display: none;
+  }
+}
+
+.navbar .container .nav-links .nav-link a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.navbar .container .nav-links .nav-link a.active {
+  color: #f05d7b;
+}
+
+.navbar .container .nav-links .marjuha a {
+  color: #f05d7b;
+}
+
+.navbar.active {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,109 @@
+.progress-bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+  .progress-bars {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.progress-bars .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.progress-bars .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.progress-bars .progress-bar {
+  margin: 0 0 10px;
+  overflow: hidden;
+  padding-right: 24px;
+  /* Separate bars from container */
+}
+
+.progress-bars .progress-title-holder {
+  padding-bottom: 7px;
+  position: relative;
+  margin: 5px 0;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.progress-bars .progress-title {
+  z-index: 100;
+}
+
+.progress-bars .progress-number-wrapper {
+  width: 100%;
+  z-index: 10;
+}
+
+.progress-bars .progress-number-mark {
+  margin-bottom: 4px;
+  border-radius: 10px;
+  background-color: #4f4f50;
+  padding: 0 8px;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.progress-bars .progress-number-wrapper,
+.progress-bars .progress-number-mark {
+  font-size: 11px;
+  line-height: 24px;
+  height: 24px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  color: #ffffff;
+}
+
+.progress-bars .down-arrow {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #4f4f50;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.progress-bars .progress-content-outter {
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.progress-bars .progress-content {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #f05d7b;
+  width: 0%;
+  /* Initial value */
+}
+/*# sourceMappingURL=bars.css.map */

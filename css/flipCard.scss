@@ -1,0 +1,154 @@
+.home {
+  margin-top: 50px;
+  display: flex;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .type {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+    }
+
+    .hello {
+      font-weight: bold;
+      transform: translateY(-40px);
+      opacity: 0;
+      span {
+        color: #f05d7b;
+        position: relative;
+      }
+    }
+    h1 {
+      transform: translateY(-40px);
+      opacity: 0;
+
+      color: #011944;
+      @media screen and (max-width: 660px) {
+        font-size: 28px;
+      }
+    }
+    .little-poop {
+      transform: translateY(-40px);
+      opacity: 0;
+
+      color: #6d6d6d;
+      @media screen and (max-width: 660px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .illustrator {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100px) scale(0.5);
+
+    .flip-container {
+      width: 350px;
+      height: 320px;
+
+      @media screen and(max-width: 1000px) {
+        width: 300px;
+      }
+
+      .card__content {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        transition: transform 0.7s;
+        transform-style: preserve-3d;
+
+        .card__front,
+        .card__back {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: flex-end;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          backface-visibility: hidden;
+          transform-style: preserve-3d;
+          img {
+            width: 100%;
+          }
+        }
+
+        .card__back {
+          transform: rotateY(0.5turn);
+          background-color: #f2f4f9;
+        }
+      }
+
+      .card__content.rotate {
+        transform: rotateY(0.5turn);
+      }
+    }
+
+    .cta {
+      background-color: #fff;
+      height: 70px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+      a {
+        text-decoration: none;
+        padding: 11px 38px;
+        border-radius: 50px;
+        transition: all 0.3s;
+        font-weight: bold;
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 2px 10px #f05d7a9c;
+        }
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+      .hire-me {
+        color: #fff;
+        background-color: #f05d7b;
+        border: 2px solid #f05d7b;
+      }
+      .download-cv {
+        color: #f05d7b;
+        border: 2px solid #f05d7b;
+      }
+    }
+    .marjuha-btn {
+      border: none;
+      display: none;
+      outline: none;
+      background-color: transparent;
+      padding: 20px;
+      color: #f05d7b;
+      font-weight: bold;
+      cursor: pointer;
+      transition: font-size 0.3s;
+      @media screen and (max-width: 600px) {
+        display: flex;
+      }
+      &:hover {
+        font-size: 14px;
+      }
+    }
+  }
+}

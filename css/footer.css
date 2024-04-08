@@ -1,0 +1,154 @@
+footer {
+  width: 100%;
+  z-index: 200;
+  margin-top: 200px;
+  padding: 0 0 50px 0;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .container form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container form p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+  color: rgba(59, 59, 59, 0.432);
+  margin-bottom: 20px;
+}
+
+footer .container form input,
+footer .container form textarea {
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+footer .container form textarea {
+  resize: none;
+  height: 100px;
+}
+
+footer .container form button {
+  width: 100px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #f05d7b;
+  color: white;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  footer .container form button {
+    width: 100%;
+  }
+}
+
+footer .container .infos {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  footer .container .infos {
+    margin-top: 50px;
+  }
+}
+
+footer .container .infos .title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+  color: rgba(59, 59, 59, 0.432);
+  margin-bottom: 20px;
+  justify-self: flex-start;
+}
+
+footer .container .infos .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+footer .container .infos .info-container span {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+footer .container .infos .info-container span a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .container .infos .info-container span img {
+  height: 20px;
+  margin: 0 5px 0 0;
+}
+/*# sourceMappingURL=footer.css.map */

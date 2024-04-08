@@ -1,0 +1,47 @@
+.navbar {
+  width: 100%;
+  background-color: #f2f4f9;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow, 0.2s;
+
+  .container {
+    width: 1000px;
+    @media screen and (max-width: 1000px) {
+      padding: 0 10px 0 10px;
+    }
+
+    .nav-links {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+      .nav-link {
+        a {
+          text-decoration: none;
+          color: #000;
+          transition: color 0.5s ease;
+          &.active {
+            color: #f05d7b;
+          }
+        }
+      }
+      .marjuha {
+        a {
+          color: #f05d7b;
+        }
+      }
+    }
+  }
+}
+
+.navbar.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+}
