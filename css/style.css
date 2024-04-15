@@ -39,21 +39,21 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 992px) {
   .blog-slider {
     max-width: 680px;
-    height: 400px;
+    height: 700px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .blog-slider {
     min-height: 500px;
-    height: auto;
+    height: 1064px;
     margin: 150px auto 0 auto;
   }
 }
 
 @media screen and (max-height: 500px) and (min-width: 992px) {
   .blog-slider {
-    height: 350px;
+    height: 1064px;
   }
 }
 
@@ -320,28 +320,31 @@ body::-webkit-scrollbar {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     left: 50% !important;
-    top: 205px;
+    top: auto;
+    bottom: 10px; /* Adjust this value based on your actual footer/padding needs */
     width: 100% !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
+    margin-top: 20px; /* Provide some margin from the content above */
+  }
+
+  .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+  }
+
+  .blog-slider__pagination .swiper-pagination-bullet-active {
+    height: 11px;
+    width: 30px;
+  }
+
+  .blog-slider {
+    margin-bottom: 50px; /* Ensure there is enough space below the slider for pagination */
   }
 }
 
 .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 8px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 5px;
-  }
 }
 
 .blog-slider__pagination .swiper-pagination-bullet {
@@ -359,13 +362,6 @@ body::-webkit-scrollbar {
   opacity: 1;
   background-color: #f05d7b;
   height: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .blog-slider__pagination .swiper-pagination-bullet-active {
-    height: 11px;
-    width: 30px;
-  }
 }
 
 .container {
