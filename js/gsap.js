@@ -21,13 +21,14 @@ gsap.to(".contacts", { x: 0, duration: 0.5, delay: 1.7, ease: "back.out(2)" });
 
 gsap.to(".animText", { duration: 1, y: 0, opacity: 1, stagger: 0.2 });
 gsap.from(".ctaAnim", {
-  y: 200,
-  opacity: 0,
+  // y: 200,
+  opacity: 100,
   duration: 0.5,
-  scale: 0,
+  scale: 1,
   ease: "back.out(2)",
-  delay: 1.2,
+  delay: 0.2,
   stagger: 0.2,
+
 });
 
 push.addEventListener("click", () => {
