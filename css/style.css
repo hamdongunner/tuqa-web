@@ -684,5 +684,26 @@ body::-webkit-scrollbar {
   .container .contacts {
     width: 100px;
   }
+  .language-circles .circle {
+    width: 80px; /* Smaller size for mobile */
+    height: 80px; /* Smaller size for mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; /* Smaller font size for text */
+  }
+
+  .language-circles .circle .language,
+  .language-circles .circle .level {
+    display: block; /* Ensures text elements are on their own line */
+    text-align: center; /* Centers the text horizontally */
+    width: 100%; /* Ensures text spans the entire width of the circle */
+    font-size: 12px; /* Smaller font size for level */
+  }
+
+  .language-circles .circle .level {
+    margin-top: 2px; /* Adjust the spacing between language and level if needed */
+  }
 }
 /*# sourceMappingURL=style.css.map */
