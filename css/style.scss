@@ -426,14 +426,12 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     transform: translateX(100%);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
-    overflow-x: hidden;
 
     .link-to-footer {
       position: absolute;
       height: 100%;
       width: 100%;
       z-index: 2;
-      overflow-x: hidden;
     }
 
     .email-icon,
@@ -441,17 +439,14 @@ body::-webkit-scrollbar {
     .location-icon,
     .date-icon {
       height: 20px;
-      overflow-x: hidden;
     }
     .date-icon {
       margin-right: 50px;
       margin-left: 5px;
       height: 18px;
-      overflow-x: hidden;
     }
     @media screen and (max-width: 550px) {
       width: 100px;
-      overflow-x: hidden;
     }
   }
 }
